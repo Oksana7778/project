@@ -1,0 +1,150 @@
+@import vars
+@import mixins
+
+.choice
+    margin-bottom: 128px
+
+.presentation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #F7F7F7
+    border: 1px solid #EAEAEA
+    height: 777px
+    &_aside:hover .presentation_pass path
+        fill: $selectColor    
+    &_center        
+        -webkit-animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+	        animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both 
+               
+
+.description
+    +centerColumns()
+    width: 1141px              
+    border: 1px solid #EAEAEA 
+    padding-top: 64px
+    padding-bottom: 65px
+    background: #fff 
+    position: relative
+    margin-top: -65px
+    transition: transform 1.5s
+    &:hover
+        transform: scale(1.1)
+   
+    &_p        
+        height: 580px
+
+    &_heading
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $selectColor
+        margin-bottom: 12px
+
+    &_name
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+        margin-top: 12px
+        margin-bottom: 48px
+
+    &_text
+        width: 555px
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+        margin-bottom: 32px
+
+    &_price
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #EF5B70
+
+    &_choice
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-bottom: 65px
+
+    &__sort
+        display: flex
+        margin-top: 65px
+        margin-bottom: 48px    
+
+    &__summary
+        margin-right: 22px
+
+    &_wrapper
+        position: relative
+
+    &_details
+        position: relative
+
+    &_details[open] .description_sort_ul
+        background: #FFFFFF
+
+.button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 211px
+    height: 47px
+    border: 1px solid #FF6A6A   
+    transition: all 1s
+
+    &:hover 
+        background-color: $selectColor
+        
+    &:hover .button_text
+        color: #FFFFFF  
+        
+    &:hover .button_sign path
+        fill: #FFFFFF
+        
+    &_text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 47px
+        color: #F26376       
+        text-align: center
+        font-size: 100%
+        margin-left: 22px
+    
+@-webkit-keyframes fade-in-fwd 
+  0% 
+    -webkit-transform: translateZ(-80px)
+            transform: translateZ(-80px)
+    opacity: 0
+  
+  100% 
+    -webkit-transform: translateZ(0)
+            transform: translateZ(0)
+    opacity: 1
+  
+
+@keyframes fade-in-fwd 
+  0% 
+    -webkit-transform: translateZ(-80px)
+            transform: translateZ(-80px)
+    opacity: 0
+  
+  100% 
+    -webkit-transform: translateZ(0)
+            transform: translateZ(0)
+    opacity: 1
+  
+
+
+
+    
+    

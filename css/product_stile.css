@@ -1,0 +1,200 @@
+.choice {
+  margin-bottom: 128px;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7F7F7;
+  border: 1px solid #EAEAEA;
+  height: 777px;
+}
+
+.presentation_aside:hover .presentation_pass path {
+  fill: #F16D7F;
+}
+
+.presentation_center {
+  -webkit-animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1141px;
+  border: 1px solid #EAEAEA;
+  padding-top: 64px;
+  padding-bottom: 65px;
+  background: #fff;
+  position: relative;
+  margin-top: -65px;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+.description:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.description_p {
+  height: 580px;
+}
+
+.description_heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+
+.description_name {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+.description_text {
+  width: 555px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  margin-bottom: 32px;
+}
+
+.description_price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.description_choice {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-bottom: 65px;
+}
+
+.description__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 65px;
+  margin-bottom: 48px;
+}
+
+.description__summary {
+  margin-right: 22px;
+}
+
+.description_wrapper {
+  position: relative;
+}
+
+.description_details {
+  position: relative;
+}
+
+.description_details[open] .description_sort_ul {
+  background: #FFFFFF;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 211px;
+  height: 47px;
+  border: 1px solid #FF6A6A;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.button:hover {
+  background-color: #F16D7F;
+}
+
+.button:hover .button_text {
+  color: #FFFFFF;
+}
+
+.button:hover .button_sign path {
+  fill: #FFFFFF;
+}
+
+.button_text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 47px;
+  color: #F26376;
+  text-align: center;
+  font-size: 100%;
+  margin-left: 22px;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    -webkit-transform-transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    -webkit-transform-transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    -webkit-transform-transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    -webkit-transform-transform: translateZ(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=product_stile.css.map */

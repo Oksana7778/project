@@ -1,0 +1,609 @@
+@import vars
+@import mixins
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Lato', sans-serif
+
+a
+    text-decoration: none
+
+p
+    max-width: 100%
+
+li
+    line-height: 1.5
+
+summary
+    display: block
+    outline: none
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+
+.header
+    background: $colorContent
+    height: 75px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &__search
+        margin-left: 41px
+
+    &__icons:not(:last-child)
+        margin-right: 33px
+
+    &_link:hover .icon path
+        fill: $selectColor
+
+.promo
+    background: #F1E4E6
+    display: flex
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+
+    &__img
+        width: 50%
+
+    &__photo
+        width: 100%
+
+    &__h1
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: $colorContent
+
+    &__h2
+        font-style: normal
+        font-weight: 400
+        font-size: 32px
+        line-height: 38px
+        color: $colorContent
+
+    &__h2_select
+        color: $selectColor
+
+    &__text
+        padding-top: 16%
+        padding-left: 64px
+
+    &__content
+        border-left: 12px solid $selectColor
+        padding-left: 16px
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both
+
+.sale
+    padding-top: 64px
+    padding-bottom: 96px
+
+    &__item
+        height: 260px
+        flex-grow: 1
+        background-position: center
+        +centerColumns()
+
+    &__item_1
+        background-image: url(../img/Group36.jpg)
+
+    &__item_2
+        background-image: url(../img/Group37.jpg)
+
+    &__item_3
+        background-image: url(../img/Group38.jpg)
+
+    &__top
+        display: flex
+        gap: 30px
+
+    &__bottom
+        background-image: url(../img/Group39.jpg)
+        height: 180px
+        background-position: center
+        margin-top: 30px
+        +centerColumns()
+
+    &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &__heading
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+
+        color: $selectColor
+
+.product
+
+    &_add:hover
+        background-color: #fff
+        color: #000
+
+    &_add:hover .product_cart path
+        fill: black
+
+    &_item-header
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &_header
+        font-style: normal
+        font-weight: normal
+        font-size: 30px
+        line-height: 36px
+        color: $colorContent
+        text-align: center
+
+    &_img
+        width: 100%
+        transition: transform 2s
+
+    &_link
+        display: flex
+
+    &_content
+        padding: 24px 16px 20px
+
+    &_add
+        position: absolute
+        top: 188px
+        left: 111px
+        display: none
+        justify-content: center
+        align-items: center
+        border: 1px solid #FFFFFF
+        width: 139px
+        height: 44px
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF        
+
+    &_text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+        text-align: center
+        margin-top: 6px
+
+        &_cart
+            margin-right: 11px
+
+    &_container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 30px
+        margin-top: 48px
+        margin-bottom: 48px
+
+    &_item
+        height: 581px
+        width: 360px
+        background: #F8F8F8
+        flex-direction: column
+        position: relative       
+
+        &_text
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #5D5D5D
+            margin-top: 12px
+            margin-bottom: 18px
+        &_amount
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            margin-top: 12px
+            margin-bottom: 18px
+            color: $selectColor
+
+    &_item:hover .product_img
+        filter: brightness(0.5)
+        transform: scale(1.06)
+
+    &_item:hover .product_add
+        display: flex
+
+.allproduct
+    display: flex
+    justify-content: center
+    margin-bottom: 95px
+
+    &_button
+        width: 211px
+        height: 47px
+        border: 1px solid #FF6A6A
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 47px
+        color: #F26376
+        text-align: center
+        transition: all 1s
+
+    &_button:hover
+        color: #FFFFFF
+        background: $selectColor
+
+.bottom-inform
+    display: flex
+    justify-content: space-between
+    height: 341px
+    background: #222224
+    align-items: center
+
+    &-box
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 360px
+
+    &_header
+        font-style: normal
+        font-weight: normal
+        font-size: 19.96px
+        line-height: 24px
+        color: #FBFBFB
+        margin-top: 28px
+        margin-bottom: 16px
+
+    &_text
+        font-style: normal
+        font-weight: 300
+        font-size: 13.972px
+        line-height: 17px
+        text-align: center
+        color: #FBFBFB
+        padding-left: 25px
+        padding-right: 25px
+
+.footer
+
+    &_bottom
+        height: 79px
+        background: #222224
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &_subscribe
+        height: 448px
+        background-image: url(../img/photosubscribe.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center bottom
+        display: flex
+        justify-content: space-around
+
+    &_subscribe_left
+        width: 50%
+        +centerColumns()
+
+    &_subscribe_right
+        @extend .footer_subscribe_left
+
+    &_subscribe_content
+        text-align: center
+        width: 50%
+    &_subscribe_form
+        display: flex
+
+    &_text
+        width: 50%
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: #222224
+        margin-top: 20px
+
+    &_subscribe_heading
+        font-size: 24px
+        line-height: 167.2%
+        color: #222224
+
+    &_subscribe_text
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 32px
+
+    &_subscribe_email
+        left: 57.31%
+        right: 26.69%
+        top: 54.24%
+        bottom: 34.82%
+        height: 49px
+        width: 70%
+        background: #E1E1E1
+        border: transparent
+        border-radius: 16px 0px 0px 16px
+        text-align: left
+        padding-left: 22px
+        padding-right: 22px
+        outline: none
+
+    &_subscribe_submit
+        left: 73.31%
+        right: 20.44%
+        top: 54.24%
+        bottom: 34.82%
+        background: $selectColor
+        border-radius: 0px 16px 16px 0px
+        border: transparent
+        text-align: center
+        color: white
+        height: 49px
+        width: 30%
+        outline: none
+
+    &_bottom_icons:hover .footer_bottom_fill path
+        fill: $selectColor
+
+    &_bottom_icons:hover .footer_bottom_fill .fotter_bottom_path
+        fill: white
+
+    &_bottom_text
+        font-size: 16px
+        line-height: 19px
+        color: #FBFBFB
+
+.navbar
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &_right
+        display: flex
+        list-style-type: none
+
+    &_text
+        font-size: 24px
+        line-height: 29px
+        color: $selectColor
+
+    &_links
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $selectColor
+    &_list
+        &:not(:last-child)
+            ::after
+                content: '/'
+                margin-left: 8px
+                margin-right: 8px
+        &:last-child a
+            font-weight: bold
+            color: $selectColor
+
+.pages
+    margin-bottom: 96px
+    align-items: center
+    display: flex
+    justify-content: center
+
+    &_list
+        border: 1px solid #EBEBEB
+        height: 44px
+        display: flex
+        align-items: center
+
+    &_list_item
+        display: inline-block
+        list-style: none
+        padding: 5px 17px
+
+    &_current
+        color: $selectColor
+
+    &_list a
+        color: #9A0000
+        text-decoration: none
+
+.filter-sort
+    padding-top: 39px
+    padding-bottom: 16px
+    display: flex
+    align-items: center
+
+.filter
+    margin-right: 30px
+    position: relative
+    width: 360px
+    &__summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        padding-right: 11px
+
+    &__details
+        padding: 13px 16px 16px
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        width: 100%
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+            & .filter__summary
+                color: $selectColor
+            & path
+                fill: $selectColor
+
+    &__details-in
+        margin-top: 16px
+        &[open] .filter__heading-in
+            color: $selectColor
+
+    &__summary-in
+        border-left: 5px solid $selectColor
+
+    &__heading-in
+        padding: 8px 0 11px 11px
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        display: block
+        color: #6F6E6E
+        border-bottom: 1px solid #EBEBEB
+
+    &__ul
+        list-style-type: none
+        padding-left: 17px
+        padding-top: 24px
+        & a
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+
+.sort
+    display: flex
+    margin-top: 25px
+    &__summary
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        padding-right: 27px
+    &_checkbox
+        position: relative
+        &[open] .sort_ul
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &_ul
+        list-style: none
+        padding: 13px 16px 16px
+        box-sizing: border-box
+        position: absolute
+        z-index: 1
+        width: 100%
+
+.sign     
+    -webkit-animation: heartbeat 3s ease-in-out infinite both
+	        animation: heartbeat 3s ease-in-out infinite both
+
+@-webkit-keyframes text-focus-in 
+  0% 
+    -webkit-filter: blur(12px)
+            filter: blur(12px)
+    opacity: 0
+  
+  100% 
+    -webkit-filter: blur(0px)
+            filter: blur(0px)
+    opacity: 1
+  
+
+@keyframes text-focus-in 
+  0% 
+    -webkit-filter: blur(12px)
+            filter: blur(12px)
+    opacity: 0
+  
+  100% 
+    -webkit-filter: blur(0px)
+            filter: blur(0px)
+    opacity: 1
+
+
+@-webkit-keyframes heartbeat 
+  from 
+    -webkit-transform: scale(1)
+            transform: scale(1)
+    -webkit-transform-origin: center center
+            transform-origin: center center
+    -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+  
+  10% 
+    -webkit-transform: scale(0.91)
+            transform: scale(0.91)
+    -webkit-animation-timing-function: ease-in
+            animation-timing-function: ease-in
+  
+  17% 
+    -webkit-transform: scale(0.98)
+            transform: scale(0.98)
+    -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+  
+  33% 
+    -webkit-transform: scale(0.87)
+            transform: scale(0.87)
+    -webkit-animation-timing-function: ease-in
+            animation-timing-function: ease-in
+  
+  45% 
+    -webkit-transform: scale(1)
+            transform: scale(1)
+    -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+  
+
+@keyframes heartbeat 
+  from 
+    -webkit-transform: scale(1)
+            transform: scale(1)
+    -webkit-transform-origin: center center
+            transform-origin: center center
+    -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+  
+  10% 
+    -webkit-transform: scale(0.91)
+            transform: scale(0.91)
+    -webkit-animation-timing-function: ease-in
+            animation-timing-function: ease-in
+  
+  17% 
+    -webkit-transform: scale(0.98)
+            transform: scale(0.98)
+    -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+  
+  33% 
+    -webkit-transform: scale(0.87)
+            transform: scale(0.87)
+    -webkit-animation-timing-function: ease-in
+            animation-timing-function: ease-in
+  
+  45% 
+    -webkit-transform: scale(1)
+            transform: scale(1)
+    -webkit-animation-timing-function: ease-out
+            animation-timing-function: ease-out
+  
+

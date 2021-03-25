@@ -1,0 +1,138 @@
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration__left {
+  width: 360px;
+}
+
+.registration__name {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 64px;
+}
+
+.registration__name_2 {
+  margin-top: 33px;
+}
+
+.registration__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.registration__right {
+  margin-left: 128px;
+}
+
+.registration__input {
+  margin-top: 20px;
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+  padding-right: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration__notice {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration__heading {
+  margin-top: 64px;
+  margin-bottom: 22px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.registration__info {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.registration__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.registration__mark {
+  margin-right: 23px;
+}
+
+.registration__male {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 33px;
+}
+
+.registration__male_1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.registration__male_2 {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.button_reg {
+  width: auto;
+  height: 50px;
+  margin-bottom: 116px;
+  background: #FFFFFF;
+}
+
+.button_text_reg {
+  margin-left: 29px;
+  margin-right: 20px;
+}
+
+.button_sign {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=registration_style.css.map */
